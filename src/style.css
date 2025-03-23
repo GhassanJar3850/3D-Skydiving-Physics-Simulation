@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+.webgl {
+    position: fixed;
+    left: 0;
+    top: 0;
+    outline: none;
+}
+.vectorRepresentation {
+    width: 308px !important;
+    height: 299px !important;
+    position: fixed;
+    left: calc(100% - 303px);
+    top: calc(52% - 100px);
+    outline: none;
+    z-index: 10000;
+}
+
+.DataPanel {
+    position: absolute;
+    background-color: #292d39;
+    top: 0;
+    z-index: 10;
+    width: 280px;
+    left: -286px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 600px;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+
+.Circle {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 100000;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 81%;
+    border: 50px solid #292d39;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.PanelIcon {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 160%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+
+.show {
+        animation: showPanel 1s ease forwards;
+        -webkit-animation: showPanel 1s ease forwards;
+}
+
+.remove {
+        animation: removePanel 1s ease forwards;
+        -webkit-animation: removePanel 1s ease forwards;
+}
+
+
+
+.DataPanel::after {
+    content: '';
+    position: absolute;
+    background-color: #181c20;
+    top: 39px;
+    width: 260px;
+    left: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 551px;
+}
+
+.TitleData {
+    color: #bec4d6;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+@keyframes showPanel {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+    100% {
+        transform: translateX(286px);
+        -webkit-transform: translateX(286px);
+        -moz-transform: translateX(286px);
+        -ms-transform: translateX(286px);
+        -o-transform: translateX(286px);
+}
+}
+@keyframes removePanel {
+    0% {
+        transform: translateX(286px);
+        -webkit-transform: translateX(286px);
+        -moz-transform: translateX(286px);
+        -ms-transform: translateX(286px);
+        -o-transform: translateX(286px);
+}
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+
+.Data {
+    color: white;
+    position: relative;
+    padding: 20px;
+    z-index: 2;
+}
+
+.Item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.ItemName {
+    width: 130px;
+    text-align: left;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.ItemValue span:first-child {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ItemNameL {
+    text-align: center;
+    width: 120px;
+    margin: 0px 15px;
+}
+
+.unit {
+    background-color: #b4b9c847;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 45%;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 0 5px 5px 0;
+} 
+
+.ItemValue {
+    width: 50%;
+    height: 30px;
+    text-align: left;
+    background: #373c4b;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    position: relative;
+}
+
+.compass {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: #94a3b8;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    border: 5px solid #292d39;
+}
+
+.compass::after {
+    content: '';
+    width: 95%;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #181c20e8;
+    top: calc(50%);
+    left: calc(50%);
+    border-radius: 50%;
+}
+.compass::before {
+    content: '';
+    width: 6%;
+    height: 6%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: white;
+    top: calc(50%);
+    left: calc(50%);
+    border-radius: 50%;
+    z-index: 7;
+}
+
+.compass .hands {
+    background-image: linear-gradient(312deg, #dc2626, #dc2626,#94a3b8, #94a3b8);
+    width: 35%;
+    height: 35%;
+    z-index: 5;
+    position: relative;
+    top: 67px;
+    left: 67px;
+    transform: skew(218deg, 37deg);
+}
+
+.directions {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 30px;
+    right: 30px; 
+    font-size: 30px;
+}
+
+.direction {
+    position: absolute;
+    font-family: consolas;
+}
+
+.N {
+    left: 48%;
+    transform: translateX(-50%);
+    top: 3%;
+    color: #dc2626;
+}
+
+.S {
+    left: 47%;
+    transform: translateX(-50%);
+    bottom: -1%;
+    color: #94a3b8;
+
+    
+}
+
+.W {
+    left: 6%;
+    transform: translateX(-50%);
+    top: 43%;
+    color: #94a3b8;
+}
+
+.E {
+    left: 88%;
+    transform: translateX(-50%);
+    top: 43%;
+    color: #94a3b8;
+}
+
+.vertices {
+    position: fixed;
+    width: 200px;
+    height: 400px;
+    z-index: 1000;
+    top: calc(70% - 250px);
+    left: calc(100% - 250px);
+    background-color: #292d39;
+    border-radius: 10px;
+}
+.vertices p{
+    color: #bec4d6;
+    padding: 10px;
+    text-align: center; 
+}
+
+.vertices::after{
+    content: '';
+    position: absolute;
+    background-color: #161a1e;
+    top: 35px;
+    width: 180px;
+    left: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 355px;
+}
+
+.verticesArow {
+    position: absolute;
+    bottom: 15px;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 9px;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+}
+
+.verticesArow p {
+    color: #bec4d6;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #373c4b;
+    margin: 3px;
+    width: 75px;
+    border-radius: 5px;
+}
+
+.verticesArow .colorVertix {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.verticesArow .nameVertix {
+    margin: 5px;
+}
+
+.Weight {
+    background-color: #4CAF50;
+}
+
+.Drag {
+    background-color: #dc2626;
+}
+
+.Coriolis {
+    background-color: #008eff;
+}
+
+.Wind {
+    background-color: #FFC107;
+}

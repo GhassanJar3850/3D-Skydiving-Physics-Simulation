@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Skydiving Simulation</title>
+</head>
+<body>
+    <div class="formPage">
+        <p class="formTitle">Start Simulation</p>
+        
+        <form id="form" class="form" action="simulation.html" method="GET">
+        
+        <div class="elements">
+            <div class="element">
+                <label for="Temperature">Temperature:</label>
+                <input type="text" id="Temperature" name="Temperature" >
+                <span class="unit">C°</span>
+            </div>
+            
+            <div class="element">
+                <label for="Altitude">Altitude:</label>
+                <input type="text" id="Altitude" name="Altitude" >
+                <span class="unit">m</span>
+            </div>
+
+            <div class="element">
+                <label for="Mass">Mass:</label>
+                <input type="text" id="Mass" name="Mass" >
+                <span class="unit">kg</span>
+            </div>
+            
+            <div class="element">
+                <label for="ParachuteArea">Parachute Area:</label>
+                <input type="text" id="ParachuteArea" name="ParachuteArea" >
+                <span class="unit">m²</span>
+            </div>
+
+            <div class="element">
+                <label for="Humidity ">Humidity:</label>
+                <input type="text" id="Humidity" name="Humidity" >
+                <span class="unit">%</span>
+            </div>
+            
+            <div class="element">
+                <label for="InitialVelocity">Initial Velocity:</label>
+                <input type="InitialVelocity" id="InitialVelocity" name="InitialVelocity" >
+                <span class="unit">m/s²</span>
+            </div>
+            
+            <div class="element">
+                <label for="latitude">Latitude:</label>
+                <input type="latitude" id="latitude" name="latitude" >
+                <span class="unit">deg</span>
+            </div>
+
+            <div class="element">
+                <label for="SkydiverCS">Skydiver CS:</label>
+                <input type="Drag_Coefficient_Phase" id="SkydiverCS" name="SkydiverCS" >
+                <span class="unit">m²</span>
+            </div>
+
+            <div class='Radio'>
+                <p>The Parachute Type</p>
+            <div class="radio-inputs">
+
+                <label>
+                    <input 
+                        class="radio-input"
+                        type="radio"
+                        value='Circular'
+                        name="options"
+                    >
+                    <span class="radio-tile">
+                        <span class="radio-icon">
+                            <img src='/parachuteIcon/Circular.svg'><img>
+                        </span>
+                        <span class="radio-label">Flat Circular</span>
+                    </span>
+                </label>
+
+                <label>
+                    <input
+                        class="radio-input"
+                        type="radio"
+                        value='Arch'
+                        name="options"
+                    >
+                    <span class="radio-tile">
+                        <span class="radio-icon">
+                            <img src='/parachuteIcon/Square.svg'/>
+                        </span>
+                        <span class="radio-label">Arch</span>
+                    </span>
+                </label>
+
+            </div>
+        </div>
+
+        </div>    
+            <button class="SubmitButton" type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

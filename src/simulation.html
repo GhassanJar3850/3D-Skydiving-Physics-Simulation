@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skydiving Simulation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <canvas class="vectorRepresentation"></canvas>
+    
+    <div id="compass" class="compass">
+      <p class="hands"></p>
+    </div>
+
+    <div class="directions">
+      <span class="direction N" >N</span>
+      <span class="direction S" >S</span>
+      <span class="direction E" >E</span>
+      <span class="direction W" >W</span>
+    </div>
+    
+    <div class="vertices">
+      <p>Vertices</p>
+      <div class="verticesArow">
+        <p><span class="colorVertix Weight"></span><span class="nameVertix">Weight Force</span></p>
+        <p><span class="colorVertix Drag"></span><span class="nameVertix">Drag Force</span></p>
+        <p><span class="colorVertix Coriolis"></span><span class="nameVertix">Coriolis Force</span></p>
+        <p><span class="colorVertix Wind"></span><span class="nameVertix">Wind Drift</span></p>
+      </div>
+    </div>
+
+    <div class="DataPanel">
+    <p class="TitleData">Data Panel</p>
+    <span class="Circle">
+        <img class="PanelIcon" src="/panel.png"/>
+    </span>
+    
+    <div class="Data">
+    <div class="Item">
+    <p class="ItemName" >Weight</p>
+    <p class="ItemValue" ><span id="weight"></span><span class="unit">N</span></p>
+    </div>
+    <div class="Item">
+    <p class="ItemName" >Drag</p>
+    <p class="ItemValue" ><span id="drag"></span><span class="unit">N</span></p>
+    </div>
+    <div class="Item">
+    <p class="ItemName" >Time</p>
+    <p class="ItemValue" ><span id="time"></span> <span class="unit">s</span></p>
+    </div>
+    <div class="Item">
+    <p class="ItemName" >Acceleration</p>
+    <p class="ItemValue"><span  id="acceleration"></span><span class="unit">m.s<sup>-2</sup></span></p>
+    </div>
+    <div class="Item">
+    <p class="ItemName" >Velocity</p>
+    <p class="ItemValue"><span id="velocity"></span><span class="unit">m.s</span> </p>
+    </div>
+    <div class="Item">
+    <p class="ItemName" >Altitude</p>
+    <p class="ItemValue"><span id="altitude"></span><span class="unit">m</span></p>
+    </div>
+    <div class="Item">
+    <p class="ItemName" >Air Density</p>
+    <p class="ItemValue"><span  id="air_density"></span><span class="unit">kg.m<sup>-3</sup></span></p>
+    </div>
+
+    <div class="Item">
+    <p class="ItemName" >Deflection</p>
+    <p class="ItemValue" ><span id="deflection"></span><span class="unit">m</span></p>
+    </div>
+
+    <div class="Item">
+    <p class="ItemName" >Wind Drift</p>
+    <p class="ItemValue" ><span id="wind_draft"></span><span class="unit">m</span></p>
+    </div>
+
+    <div class="Item">
+    <p class="ItemNameL" >Cross Section Area</p>
+    <p class="ItemValue" ><span id="Cross-Sectional_Area"></span><span class="unit">-</span></p>
+    </div>
+  </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
