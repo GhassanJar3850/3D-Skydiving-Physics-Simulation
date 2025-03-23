@@ -82,8 +82,8 @@ The UI features a real-time **data panel** displaying:
 ## VII. Installation & Usage
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/3d-skydiving-simulation.git
-   cd 3d-skydiving-simulation
+   git clone https://github.com/GhassanJar3850/3D-Skydiving-Physics-Simulation.git
+   cd 3D-Skydiving-Physics-Simulation
    ```
 2. **Install dependencies**:
    ```sh
@@ -91,9 +91,8 @@ The UI features a real-time **data panel** displaying:
    ```
 3. **Run the local server**:
    ```sh
-   npm start
+   npm run dev
    ```
-4. **Open in browser**: Navigate to `http://localhost:3000` to start the simulation.
 
 ---
 
@@ -105,13 +104,26 @@ The UI features a real-time **data panel** displaying:
 ---
 
 ## IX. Screenshots
-![Screenshot 1](screenshots/free fall.png)
-![Screenshot 2](screenshots/parachute deployed.png)
+### Simulation Parameters View
+![simulation parametes](screenshots/simulation_parameters.gif)
+
+### UI Elements
+
+<div align="center">
+  <img src="screenshots/compass.gif" width="300" style="margin: 50px;">
+  <p>Compass</p>
+  <img src="screenshots/vertices.gif" width="300" style="margin: 50px;">
+  <p>Forces Visualization</p>
+</div>
+
+### Simulation
+![free_fall screenshot](screenshots/free_fall.png)
+![parachute_deployed screenshot](screenshots/parachute_deployed.png)
 
 ---
 
 ## X. Contributors
-We welcome contributions! Feel free to fork the repo and submit pull requests.
+Any contribution is welcome, Feel free to fork the repo and submit pull requests.
 
 ---
 
