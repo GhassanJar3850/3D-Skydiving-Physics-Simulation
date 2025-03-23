@@ -105,15 +105,21 @@ The UI features a real-time **data panel** displaying:
 
 ## IX. Screenshots
 ### Simulation Parameters View
-![simulation parametes](screenshots/simulation_parameters.gif)
+![simulation parameters](screenshots/simulation_parameters.png)
 
 ### UI Elements
 
 <div align="center">
-  <img src="screenshots/compass.gif" width="300" style="margin: 50px;">
-  <p>Compass</p>
-  <img src="screenshots/vertices.gif" width="300" style="margin: 50px;">
-  <p>Forces Visualization</p>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: center; margin: 0 50px;">
+      <img src="screenshots/compass.gif" width="300">
+      <p>Compass</p>
+    </div>
+    <div style="text-align: center; margin: 0 50px;">
+      <img src="screenshots/vertices.gif" width="300">
+      <p>Forces Visualization</p>
+    </div>
+  </div>
 </div>
 
 ### Simulation
