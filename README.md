@@ -105,8 +105,16 @@ The UI features a real-time **data panel** displaying:
 ---
 
 ## IX. Screenshots
-![Screenshot 1](screenshots/free fall.png)
-![Screenshot 2](screenshots/parachute deployed.png)
+### Simulation Parameters View
+![simulation parametes](screenshots/simulation_parameters.gif)
+
+### UI Elements
+![compass](screenshots/compass.gif)
+![Forces representation](screenshots/vertices.gif)
+
+### Simulation
+![free_fall screenshot](screenshots/free_fall.png)
+![parachute_deployed screenshot](screenshots/parachute_deployed.png)
 
 ---
 
